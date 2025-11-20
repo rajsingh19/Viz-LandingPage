@@ -1,7 +1,9 @@
 import React from "react";
 import { ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const PrivacyPolicy = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="
@@ -11,7 +13,7 @@ const PrivacyPolicy = () => {
     >
       {/* Heading + Back Arrow */}
       <div className="flex items-center gap-6 mb-4">
-        <button onClick={() => window.history.back()}>
+        <button onClick={() => navigate('/')}>
           <ArrowLeft size={24} className="text-black" />
         </button>
         <h1 className="text-3xl font-bold">Privacy Policy</h1>
