@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import AppLayout from "./AppLayout";
+import PrivacyPolicy from "./components/privacy";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           </Route> */}
         {/* <Route path="login" element={<Login />} />
         <Route path="*" element={<PageNotFound />} /> */}
+         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );

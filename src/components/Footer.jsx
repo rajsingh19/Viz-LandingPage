@@ -50,7 +50,7 @@ function Footer() {
           </div>
         </div>
         <p className="text-center pt-10 font-baloo text-slate-700">
-          Copyright © 2024 Vizzle - All Rights Reserved.
+          Copyright © 2025 Vizzle - All Rights Reserved.
         </p>
       </div>
     </section>
