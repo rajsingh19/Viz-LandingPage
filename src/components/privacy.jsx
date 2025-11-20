@@ -1,106 +1,152 @@
 import React from "react";
+import { ArrowLeft } from "lucide-react";
 
 const PrivacyPolicy = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Privacy Policy for Vizzle</h1>
-     
+    <div
+      className="
+        w-full px-4 py-8 font-sans leading-relaxed
+        max-w-5xl mx-auto
+      "
+    >
+      {/* Heading + Back Arrow */}
+      <div className="flex items-center gap-6 mb-4">
+        <button onClick={() => window.history.back()}>
+          <ArrowLeft size={24} className="text-black" />
+        </button>
+        <h1 className="text-3xl font-bold">Privacy Policy</h1>
+      </div>
+
+      <p>Last Updated: [18/11/2025]</p>
 
       <p>
-        Welcome to <strong>Vizzle</strong> (“we”, “our”, “us”). This Privacy Policy explains how we 
-        collect, use, and protect your personal information when you use our mobile application (“App”).
+        This Privacy Policy explains how <strong>Vizzle</strong> ("App", "we",
+        "our", "us") handles your information. <br />
+        This policy applies to all users of the Vizzle mobile application.
       </p>
 
-      <h2 style={styles.heading}>1. Data We Collect</h2>
-      <p>We collect the following data to provide and improve our services:</p>
+      <p>
+        <strong>Company Name:</strong> Vizzle
+      </p>
+      <p>
+        <strong>Developer Name:</strong> Anshika Jaiswal
+      </p>
 
-      <h3 style={styles.subheading}>a. Personal Information</h3>
-      <ul>
-        <li>Phone Number – for login and authentication</li>
-        <li>Email Address – for verification and support</li>
+      <p>
+        <strong>Contact Email:</strong>{" "}
+        <a href="mailto:info@vizzle.in" className="text-blue-600 underline">
+          info@vizzle.in
+        </a>
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8">1. Information We Collect</h2>
+      <p>We collect the following information to provide and improve the App:</p>
+
+      <h3 className="text-xl font-semibold mt-4">
+        a. Personal Information (During Registration)
+      </h3>
+      <ul className="list-disc ml-6">
+        <li>Full Name</li>
+        <li>Email Address</li>
+        <li>Phone Number</li>
       </ul>
 
-      <h3 style={styles.subheading}>b. Uploaded Photos</h3>
+      <h3 className="text-xl font-semibold mt-4">
+        b. Uploaded Photos (Virtual Try-On)
+      </h3>
       <p>
-        If you choose to upload a photo for virtual try-on, Vizzle processes it temporarily using 
-        ML (Machine Learning) models.  
+        When you use the virtual try-on feature, you may upload a photo.
         <br />
-        <strong>We do NOT store, save, or share your photos.</strong>
+        These photos are processed using our ML models.
       </p>
-
-      <h3 style={styles.subheading}>c. Usage Data</h3>
-      <ul>
-        <li>Device and app usage information</li>
-        <li>Approximate location (non-precise)</li>
-        <li>IP address</li>
+      <ul className="list-disc ml-6">
+        <li>Photos are stored in encrypted form.</li>
+        <li>Photos are automatically deleted after a few days.</li>
       </ul>
 
-      <h2 style={styles.heading}>2. How We Use Your Data</h2>
-      <ul>
-        <li>To authenticate your account</li>
-        <li>To provide virtual try-on features</li>
-        <li>To improve app performance</li>
+      <h3 className="text-xl font-semibold mt-4">
+        c. Usage & Device Information
+      </h3>
+      <ul className="list-disc ml-6">
+        <li>Device type</li>
+        <li>App usage analytics</li>
+        <li>Crash logs</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-8">2. How We Use Your Information</h2>
+      <ul className="list-disc ml-6">
+        <li>To create and authenticate your account</li>
+        <li>To provide virtual try-on functionality</li>
+        <li>To enhance and improve app performance</li>
         <li>To provide customer support</li>
+        <li>For analytics and fraud-prevention (using App Set ID, no ads)</li>
       </ul>
 
-      <h2 style={styles.heading}>3. Data Sharing</h2>
-      <p>
-        We <strong>do not sell</strong> your personal data.  
-        <br />We also do <strong>not use any third-party SDKs</strong> that collect user data.
-      </p>
-
-      <h2 style={styles.heading}>4. Data Retention</h2>
-      <p>
-        We retain your phone number and email only as long as your account is active.  
-        Uploaded photos are <strong>not stored</strong>.
-      </p>
-
-      <h2 style={styles.heading}>5. Your Rights</h2>
-      <ul>
-        <li>Request data deletion</li>
-        <li>Access or update your information</li>
-        <li>Withdraw consent</li>
+      <h2 className="text-2xl font-semibold mt-8">3. How We Protect Your Data</h2>
+      <ul className="list-disc ml-6">
+        <li>All data is transmitted over HTTPS</li>
+        <li>User photos are stored in encrypted form</li>
+        <li>Access to personal data is restricted and monitored</li>
+        <li>We do not sell or misuse personal data</li>
       </ul>
+
+      <h2 className="text-2xl font-semibold mt-8">4. Data Sharing</h2>
+      <p>We do not share user data with advertisers or third-party trackers.</p>
+      <p>Data may be shared only with:</p>
+      <ul className="list-disc ml-6">
+        <li>Service providers who help operate backend services</li>
+        <li>Authorities if legally required</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-8">5. Data Retention</h2>
+      <ul className="list-disc ml-6">
+        <li>Registration data is retained while your account is active.</li>
+        <li>Uploaded photos are temporary & auto-deleted in few days.</li>
+        <li>
+          Deleted accounts result in permanent data deletion unless required
+          legally.
+        </li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-8">6. Account Deletion</h2>
+      <p>You can delete your account anytime.</p>
       <p>
-        Contact us at: <strong>[Insert Email]</strong>
+        <strong>In the App:</strong> Go to <em>Profile → Delete Account</em>
       </p>
-
-      <h2 style={styles.heading}>6. Children’s Privacy</h2>
-      <p>We do not knowingly collect data from children under 13.</p>
-
-      <h2 style={styles.heading}>7. Updates to This Policy</h2>
-      <p>We may update this Privacy Policy periodically. The latest version will be posted on this page.</p>
-
-      <h2 style={styles.heading}>8. Contact Us</h2>
       <p>
-        If you have questions, contact us at:  
+        <strong>Outside the App:</strong> Email at:
         <br />
-        📧 <strong>[Insert Email Address]</strong>
+        <a href="mailto:info@vizzle.in" className="text-blue-600 underline">
+          info@vizzle.in
+        </a>
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8">7. Children’s Privacy</h2>
+      <p>This app is not for children under 13.</p>
+
+      <h2 className="text-2xl font-semibold mt-8">8. Use of App Set ID</h2>
+      <p>Used only for:</p>
+      <ul className="list-disc ml-6">
+        <li>Analytics</li>
+        <li>Fraud prevention</li>
+      </ul>
+      <p>Not used for ads or tracking.</p>
+
+      <h2 className="text-2xl font-semibold mt-8">
+        9. Changes to This Privacy Policy
+      </h2>
+      <p>We may update this policy periodically.</p>
+
+      <h2 className="text-2xl font-semibold mt-8">10. Contact Us</h2>
+      <p>
+        For questions:
+        <br />
+        <a href="mailto:info@vizzle.in" className="text-blue-600 underline">
+          info@vizzle.in
+        </a>
       </p>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    maxWidth: "900px",
-    margin: "0 auto",
-    padding: "30px",
-    fontFamily: "Arial, sans-serif",
-    lineHeight: "1.7",
-  },
-  title: {
-    fontSize: "32px",
-    marginBottom: "10px",
-  },
-  heading: {
-    fontSize: "24px",
-    marginTop: "25px",
-  },
-  subheading: {
-    fontSize: "20px",
-    marginTop: "15px",
-  },
 };
 
 export default PrivacyPolicy;
