@@ -5,7 +5,7 @@ import Homesection from "./components/Homesection";
 import Navbar from "./components/Navbar";
 import VizzlePage from "./components/VizzlePage";
 import VizzlePage2 from "./components/VizzlePage2";
-
+import Text from "./components/Text";
 
 
 function AppLayout() {
@@ -14,6 +14,7 @@ function AppLayout() {
   const aboutRef = useRef(null);
   const VizzlePageRef = useRef(null);
   const VizzlePage2Ref = useRef(null);
+  const TextRef = useRef(null);
 
   return (
     <div>
@@ -35,7 +36,9 @@ function AppLayout() {
       <div ref={aboutRef}>
         <About />
       </div>
-     
+      <div ref={TextRef}>
+        <Text />
+      </div>
       
       <Footer />
     </div>

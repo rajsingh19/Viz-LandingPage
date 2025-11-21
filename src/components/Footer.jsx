@@ -5,8 +5,8 @@ import { FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <section>
-      <div className="container max-w-screen-lg mx-auto my-12">
+    <section >
+      <div className="container max-w-screen-lg mx-auto my-12 ">
         <div className="h-auto flex flex-col items-start justify-between px-8 sm:flex-row sm:px-0">
           <div className="flex flex-col items-start justify-start gap-2">
             <p className="text-3xl font-semibold tracking-wide">Contact Us</p>

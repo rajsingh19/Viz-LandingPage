@@ -2,21 +2,24 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import AppLayout from "./AppLayout";
 import PrivacyPolicy from "./components/privacy";
+import Form from "./components/form";
+import Greeting from "./components/Greeting";   
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Main landing page */}
         <Route path="/" element={<AppLayout />} />
-        {/* <Route element={<AppLayout />}>
-            <Route index element={<Navigate replace to="dashboard" />} />
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="settings" element={<Settings />} />
-            <Route path="account" element={<Account />} />
-          </Route> */}
-        {/* <Route path="login" element={<Login />} />
-        <Route path="*" element={<PageNotFound />} /> */}
-         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+        {/* Privacy Policy Page */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+        {/* Form Page */}
+        <Route path="/form" element={<Form />} />   {/* ⬅️ FIXED */}
+
+        {/* Greeting Page */}
+        <Route path="/greeting" element={<Greeting />} />
       </Routes>
     </BrowserRouter>
   );
