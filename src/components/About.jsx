@@ -40,7 +40,7 @@ function About() {
               Fewer Returns with Smarter Shopping
             </p>
             <img
-              src="about3.png"
+              src="dozi.png"
               alt="Benefits_of_Vizzle"
               className="w-1/2 rounded-full"
             />

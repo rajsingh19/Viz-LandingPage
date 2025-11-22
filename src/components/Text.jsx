@@ -23,12 +23,7 @@ export default function TrylleLanding() {
         </button>
       </Link>
 
-      <div className="mt-10 text-black">
-        <p className="text-xl font-semibold">Contact us</p>
-        <a href="mailto:info@vizzle.in" className="text-cyan-400 text-lg hover:underline">
-          info@vizzle.in
-        </a>
-      </div>
+      
     </div>
   );
 }
