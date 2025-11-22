@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import AppLayout from "./AppLayout";
 import PrivacyPolicy from "./components/privacy";
-import Form from "./components/form";
+import Form from "./components/Form";
 import Greeting from "./components/Greeting";   
 
 function App() {
