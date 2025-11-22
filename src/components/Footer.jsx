@@ -52,6 +52,21 @@ function Footer() {
         <p className="text-center pt-10 font-baloo text-slate-700">
           Copyright © 2025 Vizzle - All Rights Reserved.
         </p>
+        <div className="text-center mt-2">
+          <button 
+            onClick={() => {
+              const key = prompt('Enter admin key:');
+              if (key === '190904') {
+                window.location.href = '/admin';
+              } else if (key) {
+                alert('Invalid key');
+              }
+            }}
+            className="text-xs text-gray-400 hover:text-gray-600"
+          >
+            Admin
+          </button>
+        </div>
       </div>
     </section>
   );

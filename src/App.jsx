@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppLayout from "./AppLayout";
 import PrivacyPolicy from "./components/privacy";
 import Form from "./components/Form";
-import Greeting from "./components/Greeting";   
+import Greeting from "./components/Greeting";
+import Admin from "./components/Admin";   
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
 
         {/* Greeting Page */}
         <Route path="/greeting" element={<Greeting />} />
+
+        {/* Admin Page */}
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
